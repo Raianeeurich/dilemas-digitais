@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,32 +17,43 @@
 
 <body>
 
+    <!-- CABEÇALHO -->
+
     <header class="header">
+
         <nav class="navbar">
-            <a href="#" class="logo">
+
+            <a href="#inicio" class="logo">
                 <span>⚡</span> Dilemas Digitais
             </a>
 
             <div class="nav-links">
                 <a href="#inicio">Início</a>
                 <a href="#dilemas">Dilemas</a>
+                <a href="#temas">Temas</a>
                 <a href="#sobre">Sobre</a>
             </div>
 
-            <button id="themeButton" class="theme-button" aria-label="Alternar tema">
+            <button id="themeButton" class="theme-button">
                 🌙
             </button>
+
         </nav>
+
     </header>
+
 
     <main>
 
         <!-- HERO -->
+
         <section id="inicio" class="hero">
 
             <div class="hero-content">
 
-                <span class="tag">TECNOLOGIA • ÉTICA • SOCIEDADE</span>
+                <span class="tag">
+                    TECNOLOGIA • ÉTICA • SOCIEDADE
+                </span>
 
                 <h1>
                     Você decide.<br>
@@ -60,19 +72,31 @@
 
             </div>
 
+
             <div class="hero-card">
 
-                <div class="card-icon">💻</div>
+                <div class="card-icon">
+                    💻
+                </div>
 
-                <h3>Uma escolha.</h3>
+                <h3>
+                    Uma escolha.
+                </h3>
 
                 <p>
                     Uma consequência que pode mudar tudo.
                 </p>
 
                 <div class="fake-choice">
-                    <span>Privacidade</span>
-                    <span>Liberdade</span>
+
+                    <span>
+                        Privacidade
+                    </span>
+
+                    <span>
+                        Liberdade
+                    </span>
+
                 </div>
 
             </div>
@@ -80,10 +104,13 @@
         </section>
 
 
-        <!-- INTRO -->
+        <!-- INTRODUÇÃO -->
+
         <section class="intro">
 
-            <span class="section-label">POR QUE ISSO IMPORTA?</span>
+            <span class="section-label">
+                POR QUE ISSO IMPORTA?
+            </span>
 
             <h2>
                 Nem toda escolha digital<br>
@@ -101,29 +128,53 @@
 
 
         <!-- DILEMAS -->
+
         <section id="dilemas" class="dilemas-section">
 
             <div class="section-heading">
+
                 <div>
-                    <span class="section-label">DESAFIO</span>
-                    <h2>Qual seria sua escolha?</h2>
+
+                    <span class="section-label">
+                        DESAFIO
+                    </span>
+
+                    <h2>
+                        Qual seria sua escolha?
+                    </h2>
+
                 </div>
 
                 <div class="score">
-                    <span>PONTUAÇÃO</span>
-                    <strong id="score">0</strong>
+
+                    <span>
+                        PONTUAÇÃO
+                    </span>
+
+                    <strong id="score">
+                        0
+                    </strong>
+
                 </div>
+
             </div>
 
 
             <div class="dilema-container">
 
                 <div class="progress">
+
                     <div id="progressBar"></div>
+
                 </div>
 
                 <div class="dilema-number">
-                    DILEMA <span id="currentNumber">01</span>
+
+                    DILEMA
+                    <span id="currentNumber">
+                        01
+                    </span>
+
                 </div>
 
                 <h3 id="question">
@@ -134,23 +185,42 @@
                     Carregando contexto...
                 </p>
 
+
                 <div class="choices">
 
                     <button class="choice" id="choiceA">
-                        <span class="choice-letter">A</span>
-                        <span id="textA">Opção A</span>
+
+                        <span class="choice-letter">
+                            A
+                        </span>
+
+                        <span id="textA">
+                            Opção A
+                        </span>
+
                     </button>
 
+
                     <button class="choice" id="choiceB">
-                        <span class="choice-letter">B</span>
-                        <span id="textB">Opção B</span>
+
+                        <span class="choice-letter">
+                            B
+                        </span>
+
+                        <span id="textB">
+                            Opção B
+                        </span>
+
                     </button>
 
                 </div>
 
+
                 <div id="result" class="result hidden">
 
-                    <div class="result-icon">💭</div>
+                    <div class="result-icon">
+                        💭
+                    </div>
 
                     <h4 id="resultTitle">
                         Sua escolha
@@ -171,50 +241,251 @@
         </section>
 
 
-        <!-- TEMAS -->
-        <section class="topics">
+        <!-- TEMAS / PERGUNTAS -->
 
-            <span class="section-label">TEMAS</span>
+        <section id="temas" class="topics">
 
-            <h2>O mundo digital<br>tem muitas perguntas.</h2>
+            <span class="section-label">
+                TEMAS
+            </span>
+
+            <h2>
+                O mundo digital<br>
+                tem muitas perguntas.
+            </h2>
+
+            <p class="topics-intro">
+                Clique nos cartões para descobrir algumas respostas.
+            </p>
+
 
             <div class="topic-grid">
 
-                <article class="topic">
-                    <div class="topic-icon">🔐</div>
-                    <h3>Privacidade</h3>
-                    <p>
-                        Até onde devemos permitir que empresas coletem
-                        nossos dados?
-                    </p>
-                </article>
 
-                <article class="topic">
-                    <div class="topic-icon">🤖</div>
-                    <h3>Inteligência Artificial</h3>
-                    <p>
-                        Como equilibrar inovação, responsabilidade e
-                        participação humana?
-                    </p>
-                </article>
+                <!-- PRIVACIDADE -->
 
-                <article class="topic">
-                    <div class="topic-icon">📱</div>
-                    <h3>Redes Sociais</h3>
-                    <p>
-                        Liberdade de expressão também significa liberdade
-                        para publicar qualquer coisa?
-                    </p>
-                </article>
+                <div class="flip-card">
 
-                <article class="topic">
-                    <div class="topic-icon">🛡️</div>
-                    <h3>Segurança</h3>
-                    <p>
-                        Quanto da nossa liberdade estamos dispostos a trocar
-                        por segurança?
-                    </p>
-                </article>
+                    <div class="flip-card-inner">
+
+                        <!-- FRENTE -->
+
+                        <div class="flip-card-front topic">
+
+                            <div class="topic-icon">
+                                🔐
+                            </div>
+
+                            <h3>
+                                Privacidade
+                            </h3>
+
+                            <p>
+                                Até onde devemos permitir que empresas
+                                tenham acesso aos nossos dados?
+                            </p>
+
+                            <span class="flip-hint">
+                                ↻ Clique para descobrir
+                            </span>
+
+                        </div>
+
+
+                        <!-- VERSO -->
+
+                        <div class="flip-card-back topic">
+
+                            <div class="topic-icon">
+                                💡
+                            </div>
+
+                            <h3>
+                                Nossa resposta
+                            </h3>
+
+                            <p>
+                                Devemos compartilhar apenas os dados
+                                realmente necessários. É importante ler
+                                as permissões dos aplicativos e revisar
+                                nossas configurações de privacidade.
+                            </p>
+
+                            <span class="flip-hint">
+                                ↻ Clique para voltar
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- INTELIGÊNCIA ARTIFICIAL -->
+
+                <div class="flip-card">
+
+                    <div class="flip-card-inner">
+
+                        <div class="flip-card-front topic">
+
+                            <div class="topic-icon">
+                                🤖
+                            </div>
+
+                            <h3>
+                                Inteligência Artificial
+                            </h3>
+
+                            <p>
+                                Podemos confiar em tudo que uma
+                                inteligência artificial produz?
+                            </p>
+
+                            <span class="flip-hint">
+                                ↻ Clique para descobrir
+                            </span>
+
+                        </div>
+
+
+                        <div class="flip-card-back topic">
+
+                            <div class="topic-icon">
+                                💡
+                            </div>
+
+                            <h3>
+                                Nossa resposta
+                            </h3>
+
+                            <p>
+                                Não. A IA pode cometer erros ou apresentar
+                                informações incorretas. Devemos verificar
+                                suas respostas em fontes confiáveis.
+                            </p>
+
+                            <span class="flip-hint">
+                                ↻ Clique para voltar
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- REDES SOCIAIS -->
+
+                <div class="flip-card">
+
+                    <div class="flip-card-inner">
+
+                        <div class="flip-card-front topic">
+
+                            <div class="topic-icon">
+                                📱
+                            </div>
+
+                            <h3>
+                                Redes Sociais
+                            </h3>
+
+                            <p>
+                                Como usar as redes sociais sem deixar
+                                que elas controlem nossa rotina?
+                            </p>
+
+                            <span class="flip-hint">
+                                ↻ Clique para descobrir
+                            </span>
+
+                        </div>
+
+
+                        <div class="flip-card-back topic">
+
+                            <div class="topic-icon">
+                                💡
+                            </div>
+
+                            <h3>
+                                Nossa resposta
+                            </h3>
+
+                            <p>
+                                Podemos estabelecer limites de tempo,
+                                desativar notificações desnecessárias
+                                e fazer pausas durante o dia.
+                            </p>
+
+                            <span class="flip-hint">
+                                ↻ Clique para voltar
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SEGURANÇA -->
+
+                <div class="flip-card">
+
+                    <div class="flip-card-inner">
+
+                        <div class="flip-card-front topic">
+
+                            <div class="topic-icon">
+                                🛡️
+                            </div>
+
+                            <h3>
+                                Segurança
+                            </h3>
+
+                            <p>
+                                Como aumentar nossa segurança sem
+                                abrir mão completamente da liberdade?
+                            </p>
+
+                            <span class="flip-hint">
+                                ↻ Clique para descobrir
+                            </span>
+
+                        </div>
+
+
+                        <div class="flip-card-back topic">
+
+                            <div class="topic-icon">
+                                💡
+                            </div>
+
+                            <h3>
+                                Nossa resposta
+                            </h3>
+
+                            <p>
+                                Podemos usar senhas fortes, autenticação
+                                em dois fatores e ter cuidado com links,
+                                mensagens e informações pessoais.
+                            </p>
+
+                            <span class="flip-hint">
+                                ↻ Clique para voltar
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
 
             </div>
 
@@ -222,11 +493,14 @@
 
 
         <!-- SOBRE -->
+
         <section id="sobre" class="about">
 
             <div class="about-content">
 
-                <span class="section-label">SOBRE O PROJETO</span>
+                <span class="section-label">
+                    SOBRE O PROJETO
+                </span>
 
                 <h2>
                     Pensar antes<br>
@@ -246,16 +520,29 @@
 
             </div>
 
+
             <div class="about-number">
-                <span>01</span>
-                <span>02</span>
-                <span>03</span>
+
+                <span>
+                    01
+                </span>
+
+                <span>
+                    02
+                </span>
+
+                <span>
+                    03
+                </span>
+
             </div>
 
         </section>
 
     </main>
 
+
+    <!-- RODAPÉ -->
 
     <footer>
 
@@ -277,4 +564,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
